@@ -10,6 +10,7 @@ class MenuTest(TestCase):
 
 class MenuViewTest(TestCase):
     
+    @classmethod
     def setUp(self):
         self.icecream = item = Menu.objects.create(title="IceCream", price=20, inventory=50)
         self.granola = item = Menu.objects.create(title="Granola", price=5, inventory=50)

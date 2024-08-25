@@ -14,5 +14,5 @@ class Booking(models.Model):
     no_of_guests = models.IntegerField()
     booking_date = models.DateTimeField()
     
-    def __str__(self): 
+    def get_item(self): 
         return self.name

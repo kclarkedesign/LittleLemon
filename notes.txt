@@ -5,6 +5,7 @@ cd projectname
 pipenv shell (this creates the pipfile)
 pipenv install mysqlclient or brew install mysql-client
 pipenv install django
+pipenv install djangorestframework-simplejwt~=5.3.1
 
 
 CREATE USER 'root'@'127.0.0.1' IDENTIFIED BY 'root@123';
@@ -18,8 +19,30 @@ mysql.server stop
 
 mysql.server restart
 
-Add change to push and merge
 
-Superuser
+pip3 install djangorestframework
+
+python manage.py createsuperuser
+u/n: admin
+p/w: admin
+
+permission_classes = [IsAuthenticated]
+
+#user list - test user
+http://127.0.0.1:8000/auth/token/login/
+http://127.0.0.1:8000/auth/token/logout/
+
+
+
+em: test@little.com
+u/n: testuser
+p/w: test@123
+auth: 8ce7df1242b65f6fcf692d182aa2f32fe6b8d05d
+for postman: Authorization : Token 8ce7df1242b65f6fcf692d182aa2f32fe6b8d05d
+
+My Superusers
 kclarke
 lemon123
+
+admin
+admin

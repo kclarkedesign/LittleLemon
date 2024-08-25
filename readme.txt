@@ -1,3 +1,5 @@
+Django Project inside littlelemon-capstone folder
+
 APIs paths to Test:
 
 Login:

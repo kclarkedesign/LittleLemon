@@ -5,6 +5,7 @@ cd projectname
 pipenv shell (this creates the pipfile)
 pipenv install mysqlclient or brew install mysql-client
 pipenv install django
+pipenv install djangorestframework-simplejwt~=5.3.1
 
 
 CREATE USER 'root'@'127.0.0.1' IDENTIFIED BY 'root@123';
@@ -30,6 +31,7 @@ permission_classes = [IsAuthenticated]
 #user list - test user
 http://127.0.0.1:8000/auth/token/login/
 http://127.0.0.1:8000/auth/token/logout/
+
 
 
 em: test@little.com
